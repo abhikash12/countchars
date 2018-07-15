@@ -1,0 +1,23 @@
+<html>
+   hello count
+
+  <br> <a href="{%url 'welcome' %}">Home</a>
+
+<br> file text:-   <h4>    {{k1_ft}}
+
+<br> Wordcount:-   <h4>   {{k2_wrdcount}}
+
+  <br> Worddictonary:-   <h4>   {{k3_wrddict}}
+
+<h4>   {{k4_srt}}
+
+<p>
+{% for word,counttotal in k4_srt%}
+
+{{word}} - {{counttotal}}
+
+{% endfor %}
+
+
+
+</html>
